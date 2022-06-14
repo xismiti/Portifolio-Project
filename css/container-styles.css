@@ -1,0 +1,342 @@
+
+
+.landing{
+    background-color:#100615 ;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+/* PROFILE SETTINGS START */
+
+.profile{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 15;
+    top: 40%;
+    left: 5%;
+}
+
+
+.profile>article{   
+    margin: 0 0 0 50px;
+    background-color: #100615;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.profile>article>h1{
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+
+.profile>article>p{
+
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 100;
+}
+
+/* PROFILE SETTINGS END */
+
+/* IMAGES SETTINGS START*/
+
+.bottom{
+
+    width: 82vw;  
+    height: 100vh;
+
+}
+
+#triangule2{
+
+    position: absolute;
+    width: 82vw;
+    bottom: 0;
+
+}
+
+#triangule1{
+
+    position: absolute;
+    width: 80vw;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#cellphone{
+
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    bottom: 5%;
+    width: 35vw;
+}
+
+#rocket{
+
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 40vw;
+}
+
+
+#solarsystem{
+
+    position: absolute;
+    top: -20%;
+    left: 65%;
+    width:600px;
+    transform: scaleX(-1);
+}
+
+#stars{
+
+    position: absolute;
+    top: 40%;
+    left:5%;
+    width: 30vw;
+}
+
+/* IMAGES SETTINGS END*/
+
+/* ABOUT ME SECTION START*/
+
+
+.aboutme{
+    position: relative;
+    overflow: hidden;
+    background-color: #100615;
+    border-top: 10px solid #3F0071;
+    
+}
+
+
+.aboutme>h1{
+    font-size:5em;
+    font-style: italic;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin-top: 8vh;
+}
+#cat-astronaut{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 25vw;
+}
+#profile2{
+
+    width: 15vw;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    border: 20px solid #150050;
+    
+
+}
+
+#content-aboutme{
+    position: absolute;
+    bottom: 0;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #150050;
+
+}
+#content-aboutme>article{
+
+    margin-top: 100px;
+    background-color: #3F0071 ;
+    width: 70vw;
+    padding: 50px;
+    border-radius:40px ;
+    display: flex;
+    align-items: center;
+
+}
+
+#content-aboutme>article>p{
+
+    font-style: italic;
+    font-weight: 100;
+    text-align: justify;
+    font-size: 3vh;
+    width: 40vw;
+    padding-right: 30px;
+
+}
+
+#list-exp{
+    list-style: none;
+    width: 20vw;
+    margin-left: 50px;
+}
+
+#exp>h1{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#list-exp>li{
+
+    display: flex;
+    align-items: center;
+    justify-content: ;
+    font-size: 2em;
+
+}
+
+/* ABOUT ME SECTION END*/
+
+
+/* PROJECTS SECTION START*/
+
+.projects{
+    position: relative;
+    overflow: hidden;
+    background-color: #100615;
+    border-top: 10px solid #3F0071;
+}
+
+.projects>h1{
+    font-size:5em;
+    font-style: italic;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+}
+.container-projects{
+  
+    position: absolute;
+    bottom: 0;
+    height: 80vh;
+    width: 100%;
+    background-color: #150050;
+    border-top: 30px solid #0e0035;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.project{
+
+    background-color: white;
+    height:300px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: black;
+    overflow: hidden;
+    transition: 1s ease;
+    cursor: pointer;
+}
+.project>h1{
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+}
+.project:hover{
+    transform: scale(1.1);
+}
+
+#project1{
+    background-image: url(../img/calculator-thumb.jpg);
+    background-size: contain;
+    background-position: 0px 40px ;
+}
+#project2{
+    background-image: url(../img/jordans-thumb.jpg);
+    background-size: contain;
+    background-position: 0px 40px ;
+}
+#project3{
+    background-image: url(../img/bootstrap-thumb.jpg);
+    background-size: contain;
+    background-position: 0px 40px ;
+}
+a{
+    text-decoration: none;
+}
+
+/* PROJECTS SECTION END*/
+
+
+
+/* CONTACT SECTION START*/
+
+
+.contact{
+    position: relative;
+    overflow: hidden;
+    background-color: #100615;
+    border-top: 10px solid #3F0071;
+    background-image: url(../img/background.gif);
+}
+
+.contact>h1{
+    font-size:5em;
+    font-style: italic;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin-top: 8vh;
+}
+.container-contact{
+    
+    position: absolute;
+    bottom: 0;
+    height: 70vh;
+    width: 100%;
+    background-color: #150050;
+    border-top:20px solid #0E0035 ;
+    display: flex;
+    justify-content: center;
+
+
+}
+#profile-contact{
+    top: -10%;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+
+    border: 20px solid #150050;
+}
+
+.contacts{
+
+    position: absolute;
+    bottom: 50px;
+    height: 60%;
+    width: 80%;
+    background-color: #3F0071;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-item{
+
+    border-radius: 50%;
+    width: 10vh;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+.contact-item:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+}

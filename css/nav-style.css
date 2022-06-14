@@ -1,22 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,300&display=swap');
 
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
 
 
 
 .navegation{
 
-    width: 300px;
+    width: 18vw;
     height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color:#3F0071 ;
+
 }
 
 
@@ -24,7 +19,7 @@
 .navegation header{
 
     background-color: #610094;
-    height: 120px;
+    height: 10vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -34,7 +29,8 @@
 
 
 #title-nav{
-    font-size: 2.5em;
+    text-align: center;
+    font-size: 2vw;
     font-weight: 300;
 }
 
@@ -50,17 +46,19 @@
 
     cursor: pointer;
     padding: 20px 30px;
-    margin-top: 7vh;
-    font-size: 3vh;
+    margin-top: 10vh;
+    font-size: 1.5vw;
 }
 
 footer{
+    font-size: 8pt;
     position: absolute;
 	bottom: 0;
     height: 8vh;
-    width: 300px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color:rgba(0, 0, 0, 0.377) ;
+    padding: 10px;
 }

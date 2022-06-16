@@ -55,6 +55,7 @@
     position: absolute;
     width: 82vw;
     bottom: 0;
+    right: 0;
 
 }
 
@@ -70,7 +71,7 @@
 #cellphone{
 
     position: absolute;
-    z-index: 20;
+    z-index: 10;
     left: 50%;
     bottom: 5%;
     width: 35vw;
@@ -117,7 +118,7 @@
 
 
 .aboutme>h1{
-    font-size:5em;
+    font-size:4em;
     font-style: italic;
     font-weight: 300;
     width: 100%;
@@ -159,7 +160,7 @@
     margin-top: 100px;
     background-color: #3F0071 ;
     width: 70vw;
-    padding: 50px;
+    padding: 25px;
     border-radius:40px ;
     display: flex;
     align-items: center;
@@ -177,6 +178,12 @@
 
 }
 
+#exp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 #list-exp{
     list-style: none;
     width: 20vw;
@@ -184,16 +191,15 @@
 }
 
 #exp>h1{
-    font-size: 2em;
+    font-size: 2vw;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 #list-exp>li{
 
     display: flex;
     align-items: center;
-    justify-content: ;
-    font-size: 2em;
+    font-size: 2vw;
 
 }
 
@@ -210,12 +216,11 @@
 }
 
 .projects>h1{
-    font-size:5em;
+    font-size:4em;
     font-style: italic;
     font-weight: 300;
     width: 100%;
     text-align: center;
-    margin-top: 5vh;
 }
 .container-projects{
   
@@ -224,7 +229,7 @@
     height: 80vh;
     width: 100%;
     background-color: #150050;
-    border-top: 30px solid #0e0035;
+    border-top: 3vw solid #0e0035;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -234,8 +239,8 @@
 .project{
 
     background-color: white;
-    height:300px;
-    width: 450px;
+    height:30vh;
+    width: 20vw;
     border-radius: 20px;
     background-color: black;
     overflow: hidden;
@@ -244,7 +249,7 @@
 }
 .project>h1{
     background-color: black;
-    padding: 20px;
+    padding: 1vh;
     width: 100%;
 }
 .project:hover{
@@ -253,18 +258,21 @@
 
 #project1{
     background-image: url(../img/calculator-thumb.jpg);
-    background-size: contain;
-    background-position: 0px 40px ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #project2{
     background-image: url(../img/jordans-thumb.jpg);
-    background-size: contain;
-    background-position: 0px 40px ;
+    
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #project3{
     background-image: url(../img/bootstrap-thumb.jpg);
-    background-size: contain;
-    background-position: 0px 40px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 a{
     text-decoration: none;
@@ -282,11 +290,10 @@ a{
     overflow: hidden;
     background-color: #100615;
     border-top: 10px solid #3F0071;
-    background-image: url(../img/background.gif);
 }
 
 .contact>h1{
-    font-size:5em;
+    font-size:4em;
     font-style: italic;
     font-weight: 300;
     width: 100%;
@@ -308,9 +315,10 @@ a{
 }
 #profile-contact{
     top: -10%;
-    width: 250px;
+    width: 15vw;
     border-radius: 50%;
     position: absolute;
+    z-index:20;
 
     border: 20px solid #150050;
 }
@@ -339,4 +347,200 @@ a{
 .contact-item:hover{
     transform: scale(1.1);
     border-radius: 10px;
+}
+
+/* CONTACT SECTION END*/
+
+
+/* RESPONSIVE*/
+
+
+
+@media only screen and (max-width: 1200px) {
+
+
+
+    .navegation{
+        display: none;
+    }
+    .container{
+        width: 100vw;
+    }
+
+    
+
+    #solarsystem{
+
+        top: -10%;
+        left: 40%;
+        width:600px;
+    }
+    #rocket{
+
+        top: 10%;
+        left: 0%;
+        width: 40vw;
+    }
+
+
+    #stars{
+
+        top: 0%;
+        left:5%;
+        width: 60vw;
+    }
+
+    #cat-astronaut{
+
+        width: 20vh;
+        position: absolute;
+        top: 20%;
+        z-index: 15;
+    }
+    #content-aboutme>article>p{
+
+        font-size: 2vw;
+        width: 40vw;
+    
+    }
+    .container-projects{
+        flex-direction: column;
+        height: 85vh;
+    }
+
+    .project{
+        width: 40vw;
+        height: 20vh;
+    }
+    #content-aboutme>article{
+
+        flex-direction: column;
+        width: 90vw;
+    }
+
+
+    #content-aboutme>article>p{
+
+        margin-top: 50px;
+        width: 80vw;
+        font-size: 3vw;
+
+    }
+    
+    #exp{
+        
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    #exp>h1{
+        font-size: 3vh;
+        margin-top: 3vh;
+    }
+    
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #profile2{
+
+        width: 30vh;
+    
+    }
+    #profile-contact{
+
+        width: 30vh;
+    }
+    
+  }
+
+  @media only screen and (max-width: 800px) {
+
+   
+
+
+    #solarsystem{
+
+        top: 10%;
+        left: 30%;
+        width:600px;
+    }
+
+    #cellphone{
+
+        position: absolute;
+        z-index: 10;
+        left: 60%;
+        bottom: 0;
+        width: 40vw;
+    }
+
+    #profile2{
+
+        width: 20vh;
+    
+    }
+
+  }
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .profile>article{   
+        margin: 0 0 0 0px;
+    }
+    
+
+    #solarsystem{
+
+        top: 10%;
+        left: 50%;
+        width:250px;
+        z-index: 20;
+    }
+    #rocket{
+
+        top: 20%;
+        left:0%;
+        width: 60vw;
+    }
+
+
+    #stars{
+
+        top: 50%;
+        left:5%;
+        width: 90vw;
+    }
+
+
+    #content-aboutme>article>p{
+
+        height:35vh;
+        font-size:4vw;
+    }
+
+    #exp>h1{
+        margin-top: 0;
+        font-size: 12pt;}
+        #list-exp>li{
+
+           font-size: 6pt;
+        }
+
+    #exp{
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-item{
+
+        border-radius: 50%;
+        width: 7vh;
+        cursor: pointer;
+        transition: 0.5s ease;
+    
+    }
 }
